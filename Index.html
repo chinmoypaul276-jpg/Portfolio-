@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinmoy Paul Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f6f9;
+text-align:center;
+}
+
+header{
+background:linear-gradient(135deg,#0077ff,#00c6ff);
+color:white;
+padding:40px 20px;
+}
+
+header img{
+width:150px;
+height:150px;
+border-radius:50%;
+border:5px solid white;
+margin-top:10px;
+}
+
+section{
+padding:40px 20px;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.skill{
+margin:15px 0;
+text-align:left;
+}
+
+.skill-name{
+margin-bottom:5px;
+}
+
+.skill-bar{
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+}
+
+.skill-fill{
+height:15px;
+width:0;
+background:#0077ff;
+border-radius:20px;
+animation:fill 3s forwards;
+}
+
+@keyframes fill{
+from{width:0}
+}
+
+.html{width:90%}
+.css{width:80%}
+.js{width:60%}
+
+.social a{
+margin:10px;
+text-decoration:none;
+font-size:20px;
+}
+
+form input, form textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+background:#0077ff;
+color:white;
+border:none;
+padding:12px 20px;
+cursor:pointer;
+border-radius:5px;
+}
+
+footer{
+background:#222;
+color:white;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:600px){
+
+header h1{
+font-size:24px;
+}
+
+header img{
+width:120px;
+height:120px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Chinmoy Paul</h1>
+<p>Web Developer</p>
+
+<img src="https://i.imgur.com/1X6GQ9M.png">
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<p>
+I am learning Web Development and creating modern websites.
+My goal is to become a professional developer.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>My Skills</h2>
+
+<div class="skill">
+
+<div class="skill-name">HTML</div>
+
+<div class="skill-bar">
+<div class="skill-fill html"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-name">CSS</div>
+
+<div class="skill-bar">
+<div class="skill-fill css"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-name">JavaScript</div>
+
+<div class="skill-bar">
+<div class="skill-fill js"></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Contact Me</h2>
+
+<form action="https://formspree.io/f/YOURID" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Follow Me</h2>
+
+<div class="social">
+
+<a href="#">Facebook</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">GitHub</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Chinmoy Paul | Portfolio Website</p>
+
+</footer>
+
+</body>
+</html>
