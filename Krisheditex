@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinmoy Paul | Developer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(270deg,#0f2027,#203a43,#2c5364);
+background-size:600% 600%;
+animation:bg 12s ease infinite;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#00000080;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#00ffd5;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+
+.hero img{
+width:170px;
+height:170px;
+border-radius:50%;
+border:5px solid #00ffd5;
+box-shadow:0 0 25px #00ffd5;
+object-fit:cover;
+}
+
+.hero h1{
+font-size:40px;
+margin-top:20px;
+}
+
+.typing{
+color:#00ffd5;
+font-size:24px;
+margin-top:10px;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+.card{
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:15px;
+max-width:800px;
+margin:auto;
+margin-top:30px;
+}
+
+.skills{
+max-width:600px;
+margin:auto;
+}
+
+.skill{
+margin:20px 0;
+text-align:left;
+}
+
+.skill-bar{
+background:#333;
+border-radius:20px;
+overflow:hidden;
+}
+
+.skill-fill{
+height:14px;
+background:#00ffd5;
+width:0;
+animation:fill 3s forwards;
+}
+
+@keyframes fill{
+from{width:0}
+}
+
+.html{width:95%}
+.css{width:90%}
+.js{width:80%}
+.react{width:70%}
+.node{width:65%}
+.ui{width:85%}
+
+.project{
+background:#111;
+padding:20px;
+margin:20px auto;
+border-radius:10px;
+max-width:500px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:scale(1.05);
+}
+
+form input,form textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+border:none;
+}
+
+button{
+background:#00ffd5;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+color:#00ffd5;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#00000080;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:28px;
+}
+
+nav{
+flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>Chinmoy Paul</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<div class="hero">
+
+<img src="profile.jpg">
+
+<h1>Chinmoy Paul</h1>
+
+<div class="typing" id="typing"></div>
+
+</div>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+I am a passionate Web Developer and Website Designer.  
+I build modern websites, portfolio websites and business websites.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+HTML
+<div class="skill-bar">
+<div class="skill-fill html"></div>
+</div>
+</div>
+
+<div class="skill">
+CSS
+<div class="skill-bar">
+<div class="skill-fill css"></div>
+</div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="skill-bar">
+<div class="skill-fill js"></div>
+</div>
+</div>
+
+<div class="skill">
+React
+<div class="skill-bar">
+<div class="skill-fill react"></div>
+</div>
+</div>
+
+<div class="skill">
+Node.js
+<div class="skill-bar">
+<div class="skill-fill node"></div>
+</div>
+</div>
+
+<div class="skill">
+UI / UX Design
+<div class="skill-bar">
+<div class="skill-fill ui"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project">
+Portfolio Website
+</div>
+
+<div class="project">
+Online Shopping Website
+</div>
+
+<div class="project">
+Business Website
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="card">
+
+<form action="https://formspree.io/f/YOURID" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+<div class="social">
+
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Chinmoy Paul | Professional Developer
+
+</footer>
+
+<script>
+
+const text=[
+"Professional Web Developer",
+"Frontend Developer",
+"React Developer",
+"UI UX Designer"
+];
+
+let count=0;
+let index=0;
+let currentText="";
+let letter="";
+
+(function type(){
+
+if(count===text.length){
+count=0;
+}
+
+currentText=text[count];
+letter=currentText.slice(0,++index);
+
+document.getElementById("typing").textContent=letter;
+
+if(letter.length===currentText.length){
+count++;
+index=0;
+}
+
+setTimeout(type,120);
+
+})();
+
+</script>
+
+</body>
+</html>
